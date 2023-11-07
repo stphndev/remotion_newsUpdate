@@ -21,6 +21,8 @@ export const RemotionRoot: React.FC = () => {
 						'Grayscale wins against the sec in court',
 					],
 					titleColor: '#ffff',
+					scrollingTexts: ['Blocktalk', 'BlockTalk'],
+					scrollingColors: ['#fff', '#f888'],
 				}}
 			/>
 		</>

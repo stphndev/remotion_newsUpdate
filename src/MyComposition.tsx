@@ -1,13 +1,17 @@
 import {useVideoConfig} from 'remotion';
 import {z} from 'zod';
+import {Text} from './Text';
 import {NewsUpdateDisplay} from './NewsUpdateDisplay';
+import {zColor} from '@remotion/zod-types';
 
 export const myCompositionSchema = z.object({
-	
+	titleTexts: z.array(z.string()),
+	titleColor: zColor(),
 });
 
 export const MyComposition: React.FC<z.infer<typeof myCompositionSchema>> = ({
-	
+	titleTexts,
+	titleColor,
 }) => {
 	const {width, height} = useVideoConfig();
 
@@ -23,6 +27,7 @@ export const MyComposition: React.FC<z.infer<typeof myCompositionSchema>> = ({
 			}}
 		>
 			<NewsUpdateDisplay />
+			<Text titleTexts={titleTexts} titleColor={titleColor} />
 		</div>
 	);
 };

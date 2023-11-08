@@ -13,12 +13,12 @@ export const Text: React.FC<z.infer<typeof myTextSchema>> = ({
 	titleColor,
 }) => {
 	return (
-		<div style={{position: 'absolute', bottom: '10%', display: 'flex', justifyContent: 'center'}}>
+		<div style={{position: 'absolute', bottom: '1%', paddingLeft: '50px'}}>
 			<p
 				style={{
 					color: titleColor,
-					fontSize: '80px',
-					textAlign: 'center',
+					fontSize: '120px',
+					textAlign: 'left',
 					width: '80%',
 					fontFamily: 'Agbalumo',
 				}}

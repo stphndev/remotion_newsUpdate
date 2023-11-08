@@ -37,7 +37,7 @@ export const RemotionRoot: React.FC = () => {
 				height={1920}
 				schema={myCompositionSchema2}
 				defaultProps={{
-					titleTexts: 'Ethereum price shakeup predicted amid Merge confusion Cryptocurrency has doubled in value since mid June ahead of momentous event',
+					titleTexts: 'Ethereum and cryptocurrency price shakeup predicted amid Merge',
 					titleColor: 'black',
 				}}
 			/>

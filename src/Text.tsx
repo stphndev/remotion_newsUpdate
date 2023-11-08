@@ -27,12 +27,12 @@ export const Text: React.FC<z.infer<typeof myTextSchema>> = ({
 	);
 
 	return (
-		<div style={{position: 'absolute', bottom: '30%', display: 'flex', justifyContent: 'center'}}>
+		<div style={{position: 'absolute', bottom: '15%', display: 'flex', justifyContent: 'center'}}>
 			<p
 				style={{
 					color: titleColor,
 					opacity,
-					fontSize: '70px',
+					fontSize: '110px',
 					textAlign: 'center',
 					width: '70%',
 					fontFamily: 'Agbalumo',

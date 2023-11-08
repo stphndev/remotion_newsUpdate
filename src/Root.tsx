@@ -1,23 +1,28 @@
 import {Composition} from 'remotion';
-import {NewsUpdateDisplay, myCompSchema} from './NewsUpdateDisplay'
+import {MyComposition, myCompositionSchema} from './MyComposition';
 
 
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="NewsUpdateDisplay"
-				component={NewsUpdateDisplay}
+				id="MyComponent"
+				component={MyComposition}
 				durationInFrames={810}
 				fps={30}
 				width={1080}
 				height={1920}
-				schema={myCompSchema}
+				schema={myCompositionSchema}
 				defaultProps={{
-					titleText: 'Welcome to Remotions',
-					titleColor: '#000000',
-					logoColor1: '#91EAE4',
-					logoColor2: '#86A8E7',
+					titleTexts: [
+						'Balancer Exploit Results in $900K stolen from LPs',
+						'The Team warned about the bug 5 days prior',
+						'Record 1 million ETH burned since the start of this year',
+						'Uniswap fees alone made for 50% of the burn',
+						'Grayscale wins against the sec in court',
+					],
+					titleColor: '#ffff',
+				    logoPaths: ['google_1.png', 'grayscale_1.png'],
 				}}
 			/>
 		</>
